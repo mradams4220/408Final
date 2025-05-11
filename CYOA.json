@@ -1,0 +1,140 @@
+{
+  "title": "Commonwealth Crossroads",
+  "startingNode": "1",
+  "nodes": [
+    {
+      "id": "1",
+      "text": "You exit Vault 111 to a nuclear sunrise. Diamond City radio crackles: 'Raiders at Concord! Gunners at Cambridge!' Your Pip-Boy marks a settlement to the north.",
+      "options": [
+        {
+          "text": "Investigate Concord",
+          "nextNode": "2"
+        },
+        {
+          "text": "Head toward Cambridge",
+          "nextNode": "3"
+        },
+        {
+          "text": "Check the settlement marker",
+          "nextNode": "4"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "text": "In Concord, Minutemen are pinned by raiders. A power armor frame sits nearby, but you hear a growl from a nearby deathclaw nest.",
+      "options": [
+        {
+          "text": "Grab the power armor (requires fusion core)",
+          "nextNode": "5",
+          "requiredItem": "fusion core"
+        },
+        {
+          "text": "Sneak past to help Minutemen",
+          "nextNode": "6"
+        },
+        {
+          "text": "Retreat to Vault 111",
+          "nextNode": "1"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "text": "Cambridge Police Station: Paladin Danse fights ferals. He shouts: 'Grab that laser rifle and cover me!' A synth component glints on a corpse.",
+      "options": [
+        {
+          "text": "Join Danse's fight",
+          "nextNode": "7",
+          "inventoryChange": {
+            "add": ["laser rifle"],
+            "remove": []
+          }
+        },
+        {
+          "text": "Take the synth component and run",
+          "nextNode": "8",
+          "inventoryChange": {
+            "add": ["synth component"],
+            "remove": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Sanctuary Hills: Codsworth greets you. 'The Institute took Shaun!' A workbench contains a 10mm pistol and a Vault-Tec lunchbox.",
+      "options": [
+        {
+          "text": "Take supplies and search for clues",
+          "nextNode": "9",
+          "inventoryChange": {
+            "add": ["10mm pistol"],
+            "remove": []
+          }
+        },
+        {
+          "text": "Ask Codsworth to join you",
+          "nextNode": "10"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "text": "The power armor's HUD boots up just as the deathclaw emerges. You shred it with the minigun, saving the Minutemen. Preston swears allegiance.",
+      "options": [
+        {
+          "text": "Become Minutemen General",
+          "nextNode": "11"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "text": "You save the Minutemen but take heavy wounds. Preston gives you a laser musket and leads you to Sanctuary. 'Another settlement needs our help...'",
+      "isEnding": true
+    },
+    {
+      "id": "7",
+      "text": "After the battle, Danse recruits you into the Brotherhood. 'Ad Victoriam!' Your search for Shaun continues under their banner.",
+      "isEnding": true
+    },
+    {
+      "id": "8",
+      "text": "The Railroad intercepts you. 'That component proves the Institute's nearby!' They offer help finding Shaun... for a price.",
+      "isEnding": true
+    },
+    {
+      "id": "9",
+      "text": "The lunchbox contains a fusion core! Vault-Tec files hint at 'the Institute' beneath CIT ruins.",
+      "options": [
+        {
+          "text": "Head to CIT with your new gear",
+          "nextNode": "12",
+          "inventoryChange": {
+            "add": ["fusion core"],
+            "remove": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "text": "Codsworth's flamer makes short work of raiders. Together you uncover a pre-war holotape: Shaun was taken to a place called 'Kellogg's'.",
+      "isEnding": true
+    },
+    {
+      "id": "11",
+      "text": "As Minutemen General, you rebuild the Commonwealth. Years later, you storm the Institute with an army of settlers... and find an old man claiming to be Shaun.",
+      "isEnding": true,
+      "isWin": true
+    },
+    {
+      "id": "12",
+      "text": "At CIT, you use the power armor to break into the Institute. The scientists surrender immediately. 'Father' welcomes you home... as his replacement.",
+      "isEnding": true,
+      "isWin": true
+    }
+  ],
+  "inventory": []
+}
