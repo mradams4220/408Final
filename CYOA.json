@@ -25,9 +25,8 @@
       "text": "In Concord, Minutemen are pinned by raiders. A power armor frame sits nearby, but you hear a growl from a nearby deathclaw nest.",
       "options": [
         {
-          "text": "Grab the power armor (requires fusion core)",
-          "nextNode": "5",
-          "requiredItem": "fusion core"
+          "text": "Grab the power armor",
+          "nextNode": "5"
         },
         {
           "text": "Sneak past to help Minutemen",
@@ -45,19 +44,11 @@
       "options": [
         {
           "text": "Join Danse's fight",
-          "nextNode": "7",
-          "inventoryChange": {
-            "add": ["laser rifle"],
-            "remove": []
-          }
+          "nextNode": "7"
         },
         {
           "text": "Take the synth component and run",
-          "nextNode": "8",
-          "inventoryChange": {
-            "add": ["synth component"],
-            "remove": []
-          }
+          "nextNode": "8"
         }
       ]
     },
@@ -67,11 +58,7 @@
       "options": [
         {
           "text": "Take supplies and search for clues",
-          "nextNode": "9",
-          "inventoryChange": {
-            "add": ["10mm pistol"],
-            "remove": []
-          }
+          "nextNode": "9"
         },
         {
           "text": "Ask Codsworth to join you",
@@ -101,7 +88,7 @@
     },
     {
       "id": "8",
-      "text": "The Railroad intercepts you. 'That component proves the Institute's nearby!' They offer help finding Shaun... for a price.",
+      "text": "The Railroad intercepts you. 'That component proves the Institute is nearby!' They offer help finding Shaun... for a price.",
       "isEnding": true
     },
     {
@@ -110,11 +97,7 @@
       "options": [
         {
           "text": "Head to CIT with your new gear",
-          "nextNode": "12",
-          "inventoryChange": {
-            "add": ["fusion core"],
-            "remove": []
-          }
+          "nextNode": "12"
         }
       ]
     },
@@ -135,6 +118,5 @@
       "isEnding": true,
       "isWin": true
     }
-  ],
-  "inventory": []
+  ]
 }
