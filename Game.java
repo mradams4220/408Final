@@ -58,17 +58,19 @@ class Game {
 
     private void handleEnding(GameNode node) {
         if (node.isWin()) {
-            System.out.println("\n*** You achieved a victorious ending! ***");
+            System.out.println("\n*** You achieved a real ending! ***");
         } else {
-            System.out.println("\n*** This is the end of your journey... for now. ***");
+            System.out.println("\n*** Tough luck... try for a better ending. ***");
         }
-        System.out.println("\nWould you like to play again? (yes/no)");
+        System.out.println("\nPlay again??? (yes/no)");
         System.out.print("> ");
         String response = scanner.nextLine().toLowerCase();
         if (response.equals("yes")) {
             gameState.reset();
             System.out.println("\n\n");
             start();
+        } else {
+            System.out.println("Thanks for playing!");
         }
     }
 }
